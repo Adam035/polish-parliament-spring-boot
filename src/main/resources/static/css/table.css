@@ -1,0 +1,25 @@
+table {
+    border-color: transparent;
+}
+
+td, th {
+    max-width: 80%;
+    width: auto;
+    height: 80%;
+    overflow: auto;
+    padding: 8px;
+}
+
+th {
+    background-color: #dddddd;
+}
+
+tr:nth-child(even) {
+    background-color: #eeeeee;
+}
+
+tr:hover {
+    background-color: #dddddd;
+    cursor: pointer;
+}
+
