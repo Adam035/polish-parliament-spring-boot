@@ -27,7 +27,7 @@ public class Http {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return null;
+        return List.of();
     }
 
     public static <T> T getObject(Class<T> class_, String apiUrl) {

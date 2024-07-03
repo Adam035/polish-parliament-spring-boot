@@ -1,4 +1,4 @@
-package com.lipian.polishparliament;
+package com.lipian.polishparliament.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

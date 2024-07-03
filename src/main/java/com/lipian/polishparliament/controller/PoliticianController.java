@@ -1,5 +1,7 @@
-package com.lipian.polishparliament.politicians;
+package com.lipian.polishparliament.controller;
 
+import com.lipian.polishparliament.model.Politician;
+import com.lipian.polishparliament.service.PoliticianService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
