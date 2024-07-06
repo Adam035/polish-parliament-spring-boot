@@ -1,0 +1,37 @@
+.container {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.sitting {
+    margin: 20px;
+    width: 200px;
+    height: 50px;
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    background-color: #eeeeee;
+}
+
+.sitting p {
+    margin: 0;
+}
+
+.sitting:hover {
+    background-color: #dddddd;
+}
