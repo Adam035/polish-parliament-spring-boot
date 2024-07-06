@@ -28,7 +28,12 @@
     <h2 style="padding: 10px 40px" class="section-title">Informacje</h2>
     <div class="details-container">
         <div class="column">
-            <p>Imiona: <span th:text="${politician.firstName} + ' ' + ${politician.secondName}"></span></p>
+            <p th:if="${politician.secondName != null}">
+                Imiona: <span th:text="${politician.firstName} + ' ' + ${politician.secondName}"></span>
+            </p>
+            <p th:if="${politician.secondName == null}">
+                Imię: <span th:text="${politician.firstName}"></span>
+            </p>
             <p>Nazwisko: <span th:text="${politician.lastName}"></span></p>
             <p>Klub: <span th:text="${politician.club}"></span></p>
             <p>Okręg: <span th:text="${politician.districtName}"></span></p>
@@ -36,10 +41,12 @@
         </div>
         <div class="column">
             <p>Wykształcenie: <span th:text="${politician.educationLevel}"></span></p>
-            <p>Zawód: <span th:text="${politician.profession}"></span></p>
+            <p th:if="${politician.profession != null}">
+                Zawód: <span th:text="${politician.profession}"></span>
+            </p>
             <p>Data urodzenia: <span th:text="${politician.birthDate}"></span></p>
             <p>Miejsce urodzenia: <span th:text="${politician.birthLocation}"></span></p>
-            <p>e-mail: <span th:text="${politician.email}"></span></p>
+            <p>e-mail: <span th:text="${politician.email.toLowerCase()}"></span></p>
         </div>
     </div>
 
