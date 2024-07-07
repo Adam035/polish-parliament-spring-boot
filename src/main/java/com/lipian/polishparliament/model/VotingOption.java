@@ -5,15 +5,11 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
-import java.util.List;
-
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class Voting {
-    private int votingNumber, sitting, sittingDay, totalVoted, notParticipating, yes, abstain, no, term;
-    private String title, topic, date, kind;
-    private List<Vote> votes;
-    private List<VotingOption> votingOptions;
+public class VotingOption {
+    private int optionIndex, votes;
+    private String option, description;
 }
